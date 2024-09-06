@@ -2,17 +2,24 @@
   "name": "inquirer-table-input",
   "version": "0.0.3",
   "description": "A table input for Inquirer",
-  "main": "index.js",
+  "main": "dist/table.js",
   "dependencies": {
-    "chalk": "^3.0.0", 
+    "@inquirer/core": "^9.1.0",
+    "chalk": "^3.0.0",
     "cli-cursor": "^3.1.0",
-    "cli-table": "^0.3.1", 
+    "cli-table": "^0.3.1",
     "inquirer": "^7.0.3"
   },
   "devDependencies": {
+    "@types/cli-table": "^0.3.4",
     "husky": "^4.0.0",
     "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "overrides": {
+    "type-fest": "4.26.0"
   },
   "scripts": {
     "test": "npm run format",

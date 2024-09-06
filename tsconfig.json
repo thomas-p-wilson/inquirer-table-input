@@ -1,0 +1,50 @@
+{
+  "ts-node": {
+    "transpileOnly": true
+  },
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "removeComments": true,
+    "target": "esnext",
+    "allowJs": true,
+
+    // Module resolution
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    // Source Map
+    "declaration": true,
+    "sourceMap": true,
+    "sourceRoot": "/",
+
+    // Strict Checks
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+
+    // Linter Checks
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Misc
+    "experimentalDecorators": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ],
+  "exclude": [
+    "./node_modules/**/*",
+    "./build/**/*",
+    "./dist/**/*"
+  ]
+}
